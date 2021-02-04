@@ -1,0 +1,17 @@
+import random
+money = int(input("how much money do you have? "))
+price = 3
+games = money//3
+odeff = money%3
+print("you have money :",money,"\nyou have games : ",games,'\nyou have odeff : ',odeff)
+for money in range(games):
+    cube1 = random.randint(1,6)
+    cube2 = random.randint(1,6)
+    if cube1 == cube2:
+        print("you won 100 nis")
+        money = money + 100
+    elif cube1 != cube2:
+        print("you lose 3 nis")
+        money = money - 3
+
+print('you have money', money)
