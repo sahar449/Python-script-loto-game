@@ -14,4 +14,4 @@ for money in range(games):
         print("you lose 3 nis")
         money = money - 3
 
-print('you have money:1', money)
+print('you have money:', money)
